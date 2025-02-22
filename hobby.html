@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>DJ | Hobby</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="assets/css/meyawo.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="index.html">DJ</a>
+            <ul class="nav">
+              <li class="item">
+                <a class="link" href="index.html">Home</a>
+              </li>
+              <li class="item">
+                <a class="link" href="experience.html">Experience</a>
+              </li>
+              <li class="item">
+                <a class="link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="item">
+                <a class="link" href="hobby.html">Hobby</a>
+              </li>
+              <!-- <li class="item ml-md-3">
+                <a href="components.html" class="btn btn-primary">Components</a>
+              </li> -->
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <!-- <span class="up">HI!</span> -->
+                <span class="down">Hobby</span>
+            </h1>
+            <p class="header-subtitle">How to enjoy this life.</p>
+
+            <!-- <button class="btn btn-primary">Visit My Works</button> -->
+        </div>
+    </header><!-- end of page header -->
+
+    <!-- service section -->
+    <section class="section" id="hobby">
+        <div class="container text-center">
+            <!-- row -->
+            <div class="row">
+                <div class="col col-3">
+                    <div class="hobby-card" id="1">
+                        <div class="body">
+                            <img src="assets/imgs/hobby-1.png"
+                                class="icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-3">
+                    <div class="hobby-card" id="2">
+                        <div class="body">
+                            <img src="assets/imgs/hobby-2.png"
+                                class="icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-3">
+                    <div class="hobby-card" id="3">
+                        <div class="body">
+                            <img src="assets/imgs/hobby-3.png"
+                                class="icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-3">
+                    <div class="hobby-card" id="4">
+                        <div class="body">
+                            <img src="assets/imgs/hobby-4.png"
+                                class="icon">
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+        </div>
+
+        <div class="container text-center" style="margin-top: 50px;">
+          <div class="row">
+              <div class="col-md-12 col-lg-12">
+                  <div class="hobby-content-card" id="info-box">
+                      <div class="body">
+                          <!-- <img src="assets/imgs/pencil-case.svg" class="icon" id="info-icon"> -->
+                          <h6 class="title" id="info-title">This my hobby</h6>
+                          <p id="info-text"> cek it dot !</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      
+    </section><!-- end of hobby section -->
+
+    <!-- footer -->
+    <div class="container">
+      <footer class="footer">
+        <p class="mb-0">
+            <script>document.write(new Date().getFullYear())</script> &copy; <a
+                href="#">Didit Jamiyanto | Made with ❤️ + ☕ </a> 
+        </p>
+        <div class="social-links text-right m-auto ml-sm-auto">
+            <a href="https://facebook.com/didit.disttim" class="link"><i class="ti-facebook"></i></a>
+            <a href="https://x.com/djmianto" class="link"><i class="ti-twitter-alt"></i></a>
+            <a href="https://linkedin.com/in/didit-jamiyanto-8b456393" class="link"><i class="ti-linkedin"></i></a>
+            <a href="https://youtube.com/@DiditZara" class="link"><i class="ti-youtube"></i></a>
+            <a href="mailto:diditjamianto7@gmail.com" class="link"><i class="ti-email"></i></a>
+            <a href="https://instagram.com/djmianto" class="link"><i class="ti-instagram"></i></a>
+        </div>
+      </footer>
+    </div> <!-- end of page footer -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/meyawo.js"></script>
+
+</body>
+
+</html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const hobbyCards = document.querySelectorAll(".hobby-card:not(#info-box)"); // Hindari info-box
+      // const infoIcon = document.getElementById("info-icon");
+      const infoTitle = document.getElementById("info-title");
+      const infoText = document.getElementById("info-text");
+
+      const data = {
+          "1": {
+              "title": "Watching Movies",
+              "text": [
+                "Watching movies and TV series is one of my favorite hobbies, especially on platforms like Netflix and HBO. I enjoy various genres, from epic dramas to thrilling mysteries. For me, watching is not just entertainment but also a way to explore different stories, characters, and worlds.",
+                "Every movie or series I watch provides a new experience that can either inspire me or simply be a great way to unwind after a long day. I often fill my free time by watching movies or series. Whenever I have no other activities or just want to relax, watching becomes the best way to relieve stress.",
+                "Among the many series I have watched, Game of Thrones and Vikings are the most memorable. Recently, I have also been enjoying Stranger Things, which offers a unique combination of 80s nostalgia and supernatural adventure. I am eagerly waiting for the next season and can’t wait to see how the story unfolds further."
+              ]
+          },
+          "2": {
+              "title": "Playing Games",
+              "text": [
+                "Playing games is one of my favorite hobbies, especially on PlayStation. I enjoy playing various genres, from action and adventure to racing games. Playing on PS provides a more immersive experience with stunning graphics and responsive controls. Every time I play, I feel like I can relax and enjoy the challenges within the game.",
+                "Besides playing on PlayStation, I also often play mobile games, especially Mobile Legends. This game has become my favorite because of the excitement of playing with a team and the strategies that need to be applied in every match. Mobile Legends is not just a game; it is also a way to sharpen quick thinking, team coordination, and reflexes in facing opponents.",
+                "In Mobile Legends, I usually play the Jungler role. This role is quite challenging as it requires speed, accuracy, and strategy to help the team achieve victory. I enjoy finding the right moment to attack enemies and secure objectives like Turtle and Lord. If you also love playing Mobile Legends, let's team up and win the game together! 🚀"
+              ]
+          },
+          "3": {
+              "title": "Mini Soccer",
+              "text": [
+                "I have loved playing soccer since I was a child. Kicking the ball, running across the field, and working together with teammates have always been exciting experiences for me. Soccer is not just a sport but also a way for me to stay active, have fun, and build strong friendships. Every match brings new challenges and unforgettable moments.",
+                "Besides soccer, I also enjoy playing futsal and mini soccer. These variations of the game offer a faster pace and require quick decision-making, which makes them even more thrilling. Futsal, with its smaller field and fewer players, helps improve my ball control and passing accuracy, while mini soccer allows me to enjoy the game in a more casual setting with friends.",
+                "I love playing as a striker because scoring goals gives me an incredible sense of accomplishment. The adrenaline rush when dribbling past defenders and finding the perfect moment to strike is unmatched. Being a striker also means carrying the responsibility of leading the team’s attack and making the most of every opportunity. There’s nothing more satisfying than seeing the ball hit the back of the net and celebrating with teammates! ⚽🔥"
+              ]
+          },
+          "4": {
+              "title": "Loving Cats",
+              "text": [
+                "I really love cats and always feel happy when playing with them. Cats are adorable, cute animals with unique personalities. Playing with cats is one of the best ways to relieve stress and enjoy my free time. Their agile movements, adorable antics, and soothing purrs always make me feel calm and comfortable.",
+                "I have several pet cats that I cherish dearly. Two of them are named Kicik and Zoya. Zoya is the mother of three adorable kittens: Zoro, Zion, and Zoe. Watching them grow and play together at home brings me so much joy. Each cat has its own unique personality, and I love spending time taking care of them and understanding their behaviors.",
+                "Besides taking care of my pet cats, I also care about stray cats in need. One of the cats I rescued was a stray suffering from scabies. We named him Olaf. I took care of him with love, provided him with proper food, and treated his illness until he became healthy again. Helping stray cats like Olaf gives me a deep sense of fulfillment, knowing that they can have a better life. If you want to meet my cats, check out our YouTube channel <a href='https://www.youtube.com/@DiditZara' target='_blank'>@DiditZara</a>! 😊 "
+              ]
+          }
+      };
+
+      hobbyCards.forEach(card => {
+          card.addEventListener("click", function () {
+              // Hapus kelas 'clicked' dari semua kartu
+              hobbyCards.forEach(c => c.classList.remove('clicked'));
+
+              // Tambahkan kelas 'clicked' ke elemen yang dipilih
+              this.classList.add('clicked');
+
+              // Dapatkan ID dari elemen yang diklik
+              const id = this.id;
+
+              // Jika ID ada dalam data, perbarui info-box
+              if (data[id]) {
+                  infoTitle.innerText = data[id].title;
+                  infoText.innerHTML = data[id].text.map(paragraph => `<p>${paragraph}</p>`).join("");
+              }
+          });
+      });
+  });
+</script>
